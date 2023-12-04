@@ -4,10 +4,13 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
+import ocr from "../../Assets/Projects/ocr.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import analyse from "../../Assets/Projects/analyse.png";
+
 
 function Projects() {
   return (
@@ -65,7 +68,7 @@ AI synergy: DALL-E and GPT work in harmony to understand your descriptions and t
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
+              title="movie4u"
               description="L'Application de Recommandation de Livres est une solution technologique innovante conçue en utilisant Flask, une application web Python, ainsi que des techniques de Traitement du Langage Naturel (NLP) et de l'apprentissage automatique (machine learning). Cette application vise à améliorer l'expérience de lecture en aidant les utilisateurs à découvrir des livres qui correspondent à leurs préférences et à leurs intérêts littéraires"
               ghLink="#"
               demoLink="#"
@@ -92,6 +95,26 @@ AI synergy: DALL-E and GPT work in harmony to understand your descriptions and t
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="#"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ocr}
+              isBlog={false}
+              title="Reconnaissance Intelligente de Fournitures Scolaires"
+              description="Le projet vise à développer un système de reconnaissance d'images capable de scanner des photos de fournitures scolaires et d'extraire automatiquement les articles ainsi que leurs quantités associées. Ce système exploitera les techniques de vision par ordinateur et d'apprentissage automatique pour automatiser le processus de reconnaissance."
+              ghLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={analyse}
+              isBlog={false}
+              title="Analyse des Données Historiques"
+              description="Le projet se concentre sur le développement d'un modèle de prévision robuste capable de prédire avec précision les montants quotidiens des transactions en s'appuyant sur des données historiques. Cette solution innovante utilise des techniques avancées d'analyse prédictive pour anticiper les tendances futures, offrant ainsi aux entreprises une vision claire de leurs transactions financières quotidiennes."
+              ghLink="#"
             />
           </Col>
         </Row>
